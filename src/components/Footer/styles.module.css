@@ -13,51 +13,7 @@ footer span {
     color: #fff;
 }
 
-.roadmap {
-    padding: 50px 0;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.info h3 {
-    font-size: 30px;
-}
-
-.info ul {
-    list-style-type: none; /* Убираем стандартные маркеры списка */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding-bottom: 30px;
-    margin: 0;
-}
-
-.info ul li {
-    position: relative;
-    padding-left: 20px;
-}
-
-.info ul li::before {
-    content: "•"; /* Добавляем свой маркер */
-    position: absolute;
-    left: 0;
-    color: #000; /* Цвет маркера */
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.links img {
-    height: 40px;
+.github {
     width: 40px;
+    height: 40px;
 }
-
