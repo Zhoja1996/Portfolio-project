@@ -7,16 +7,18 @@ nav {
     border-bottom: 1px solid #333;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo h1 {
     color: white;
     font-weight: 800;
     font-size: 25px;
 }
 
-.logo span {
-    color: white;
-    font-weight: 400;
-}
 
 .details {
     display: flex;
@@ -39,22 +41,35 @@ nav {
 .info ul li {
     position: relative;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
-.info ul li::after {
-    content: "";
+a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.active::after {
+    content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    display: block;
     height: 2px;
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    width: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-.info ul li:hover::after {
-    transform: scaleX(1);
+.light, .dark {
+    width: 20px;
+    height: 20px;
 }
 
 .light, .dark {
