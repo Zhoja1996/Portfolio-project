@@ -1,0 +1,46 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+    gap: 40px;
+    min-height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacts h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    font-size: 2rem;
+    margin: 0;
+    color: #555;
+}
+
+.contacts span {
+    font-size: 1rem;
+    color: #777;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #0056b3;
+}
