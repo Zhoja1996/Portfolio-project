@@ -1,12 +1,9 @@
-import { useTheme } from '../App/providers/ThemeProvider';
 import styles from './styles.module.css';
 
 const Header = () => {
 
-    const {isDarkMode} = useTheme();
-
     return (
-        <div className={`${isDarkMode ? styles.dark : styles.light}`}>
+        <>
             <header>
                 <div className={styles.description}>
                     <p>My name is Yevhenii</p>
@@ -33,7 +30,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
