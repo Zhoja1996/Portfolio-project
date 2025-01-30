@@ -1,4 +1,73 @@
 
+
+/* DarkMode */
+
+div.dark {
+    border-top: 1px solid #333;
+}
+
+div.light {
+    border-bottom: 1px solid #333;
+}
+
+div.light .roadmap {
+    background-color: #E5E5E5;
+    position: relative;
+    border-top: 1px solid #333;
+}
+
+div.dark .roadmap {
+    background-color: #0a0a0a;
+    position: relative;
+}
+
+div.dark .roadmap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+}
+
+div.dark .roadmap::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+
+div.dark .roadmap h3 {
+    color: white;
+}
+
+div.dark .roadmap li {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+div.dark .roadmap li::before {
+    content: "•"; 
+    color: rgb(255, 255, 255); 
+    font-size: 1.5rem; 
+}
+
+div.dark .roadmap li span {
+    color: white;
+}
+
+
+/* DarkMode */
+
+
 header {
     background-color: #0a0a0a;
     display: flex;
@@ -52,6 +121,8 @@ header {
 .info ul li {
     position: relative;
     padding-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .info ul li::before {
@@ -59,6 +130,7 @@ header {
     position: absolute;
     left: 0;
     color: #000; /* Цвет маркера */
+    font-size: 1.5rem; 
 }
 
 .links {

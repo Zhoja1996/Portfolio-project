@@ -9,6 +9,18 @@ footer {
     gap: 15px;
 }
 
+/* DarkMode */
+
+footer.light {
+    background-color: #fff;
+}
+
+footer.light span {
+    color: black;
+}
+
+/* DarkMode */
+
 footer span {
     color: #fff;
 }
