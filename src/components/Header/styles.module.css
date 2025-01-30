@@ -46,10 +46,12 @@ header {
 .info ul {
     list-style-type: none; /* Убираем стандартные маркеры списка */
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding-bottom: 30px;
     margin: 0;
+    padding: 0;
 }
 
 .info ul li {
@@ -104,3 +106,91 @@ header {
     height: 1px;
     background-color: #333;
 }
+
+/* Media */
+
+@media (max-width: 640px) {
+    header {
+        background-size: 75%;
+        padding: 0;
+    }
+
+    .description p {
+        font-size: 1.5rem;
+    }
+
+    .description h2 {
+        font-size: 1rem;
+    }
+
+    .info h3 {
+        font-size: 25px;
+    }
+
+    .info ul li span {
+        font-size: 15px
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+        background-size: 75%;
+    }
+
+    .description p {
+        font-size: 22px;
+    }
+
+    .description h2 {
+        font-size: 14px;
+    }
+
+    .info h3 {
+        font-size: 22px;
+    }
+
+    .info ul li span {
+        font-size: 12px
+    }
+}
+
+@media (max-width: 475px) {
+    header {
+        background-size: 75%;
+    }
+
+    .description p {
+        font-size: 20px;
+    }
+
+    .description h2 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        background-size: 75%;
+        min-height: 550px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    .description h2 {
+        font-size: 12px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+
+    .info ul li span {
+        font-size: 10px;
+    }
+}
+
+
+
+/* Media */

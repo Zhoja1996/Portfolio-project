@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../Helpers/projects";
 import { useTheme } from "../../components/App/providers/ThemeProvider";
-import styles from './styles.module.css';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import GitHubBtn from "../../components/GitHubBtn/GutHubBtn";
+
+import styles from './styles.module.css';
 
 const ProjectPage = () => {
 

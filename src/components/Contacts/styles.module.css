@@ -67,3 +67,21 @@
 .contacts a:hover {
     color: #0056b3;
 }
+
+/* Media */
+
+@media (max-width: 640px) {
+    .contacts h1 {
+        font-size: 2rem;
+    }
+
+    .contacts p {
+        font-size: 1.5rem;
+    }
+
+    .contacts span {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media */
