@@ -24,15 +24,54 @@
     /* border-bottom: 2px solid rgb(117, 115, 115); */
 }
 
-
 /* DarkMode */
+
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-auto-flow: row; /* Автоматическое размещение элементов по строкам */
+    justify-items: center; /* Центрирование элементов в колонках */
 }
 
 .project img {
     width: 500px;
     height: 300px;
 }
+
+/* Media */
+
+@media (max-width: 1650px) {
+    .projects {
+        gap: 7px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .dark, .light {
+        padding: 20px 50px;
+    }
+}
+
+/* @media (max-width: 450px) {
+    .dark, .light {
+        padding: 20px 50px;
+    }
+} */
+
+
+/* Media */
