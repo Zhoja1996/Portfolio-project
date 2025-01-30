@@ -1,5 +1,5 @@
-import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
+import styles from './styles.module.css';
 
 const ProjectItem = ({ img, title, index }) => {
     return (

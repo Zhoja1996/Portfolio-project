@@ -1,9 +1,12 @@
-
+import { useTheme } from '../App/providers/ThemeProvider';
 import styles from './styles.module.css';
 
 const Contacts = () => {
+
+    const {isDarkMode} = useTheme();
+
     return (
-        <div className={styles.contacts}>
+        <div className={`${isDarkMode ? styles.dark : styles.light} ${styles.contacts}`}>
 
             <h1>Contacts</h1>
 

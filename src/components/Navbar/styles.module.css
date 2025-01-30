@@ -1,11 +1,41 @@
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 0 230px;
     background-color: #0a0a0a;
-    border-bottom: 1px solid #333;
 }
+
+/* DarkMode */
+
+.navbar.light {
+    background-color: #fff;
+}
+
+.navbar.light h1 {
+    color: #000000;
+}
+
+.navbar.light li a{
+    color: black;
+}
+
+.navbar.light .active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+
+/* DarkMode */
+
 
 .logo {
     display: flex;
@@ -67,12 +97,7 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
-.light, .dark {
-    width: 20px;
-    height: 20px;
-}
-
-.light, .dark {
+.lightBtn, .darkBtn {
     width: 20px;
     height: 20px;
 }

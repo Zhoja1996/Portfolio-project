@@ -6,9 +6,32 @@
     padding: 70px 0px;
     gap: 40px;
     min-height: 600px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* DarkMode */
+
+.contacts.dark {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background-color: #0a0a0a;
+}
+
+.contacts.dark h1 {
+    color: #9b9b9b;
+}
+
+.contacts.dark p {
+    color: #666666;
+}
+
+.contacts.light {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #E5E5E5;
+}
+
+/* DarkMode */
 
 .contacts h1 {
     font-size: 3rem;

@@ -1,11 +1,14 @@
 import { Link, NavLink } from 'react-router-dom';
 import styles from './styles.module.css';
-import light from '../../assets/img/light.png';
-import dark from '../../assets/img/dark.png';
+import { useTheme } from '../App/providers/ThemeProvider';
+import { themeIcons } from '../../assets';
 
 const Navbar = () => {
+
+    const {isDarkMode, toggleTheme} = useTheme();
+
     return (
-        <nav>
+        <nav className={`${isDarkMode ? styles.dark : styles.light} ${styles.navbar}`}>
             <div className={styles.logo}>
                 <Link to="/">
                     <h1>Portfolio</h1> 
@@ -42,10 +45,8 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <button className={styles.darkBtn}>
-                    <img className={styles.light} src={light} alt="Light mode" />
-                    <img className={styles.dark} src={dark} alt="Dark mode" />
-                </button>
+                <img className={styles.lightBtn} src={isDarkMode ? themeIcons.light : themeIcons.dark} alt="Light mode" onClick={toggleTheme}/>
+                    
             </div>
         </nav>
     );
