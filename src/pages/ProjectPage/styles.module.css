@@ -4,8 +4,26 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 15px 300px;
-    gap: 20px
+    padding: 30px 300px;
+    gap: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.project h1 {
+    padding: 0;
+    margin: 0;
 }
 
 /* DarkMode */
@@ -17,15 +35,10 @@
     border-bottom:1px solid #333;
 }
 
+.project.light {
+    background-color: #E5E5E5;
+    color: black;
+}
+
 /* DarkMode */
 
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project p {
-    font-size: 20px;
-    font-weight: bold;
-}
