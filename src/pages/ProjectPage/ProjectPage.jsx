@@ -18,7 +18,7 @@ const ProjectPage = () => {
             <div className={`${isDarkMode ? styles.dark : styles.light} ${styles.project}`}>
                 <h1>{projects[id].title}</h1>
                 <a target='_blank' href={projects[id].url}><img src={projects[id].img} alt={projects[id].title} /></a>
-                <p className={styles.skills}>Skills: React, Redux, RTK Query, TypeScript, API</p>
+                <p className={styles.skills}>{projects[id].skills}</p>
                 <GitHubBtn url={projects[id].gitHub}/>
             </div>
             <Footer/>
